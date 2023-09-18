@@ -129,7 +129,7 @@ const Header = () => {
                   </div>
                   <div className="ms-auto gap-3">
                     <a
-                      href="/shop"
+                      href="/catalog"
                       className={"/" === "/shop" ? "active" : "not-active"}
                       onClick={toggleMenu}
                     >
