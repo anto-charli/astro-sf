@@ -2,13 +2,14 @@
 // Component Imports
 import MainLayout from "../layouts/MainLayout.astro";
 import CatalogComponent from "../components/CatalogComponent";
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+// // Full Astro Component Syntax:
+// // https://docs.astro.build/core-concepts/astro-components/
 
-const catalogResponse = await fetch(
-  "https://fakestoreapi.com/products?limit=10"
-);
-const catalogData = await catalogResponse.json();
+// const catalogResponse = await fetch(
+//   "https://fakestoreapi.com/products?limit=10"
+// );
+// const catalogData = await catalogResponse.json();
+const catalogData = [];
 ---
 
 <MainLayout>
