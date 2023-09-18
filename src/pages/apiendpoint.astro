@@ -1,8 +1,8 @@
 ---
-import { GET } from '../api/hello.ts'
+import { GET } from "../api/hello.ts";
 
-let response = await GET(Astro)
-const data = await response.json()
+let response = await GET(Astro);
+const data = await response.json();
 ---
 
-<h1>{data.greeting} world!</h1>
+<div>{JSON.stringify(data)} world!</div>
