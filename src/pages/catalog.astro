@@ -9,7 +9,12 @@ import CatalogComponent from "../components/CatalogComponent";
 //   "https://fakestoreapi.com/products?limit=10"
 // );
 // const catalogData = await catalogResponse.json();
-const catalogData = [];
+// const catalogData = [];
+
+import { GET } from "../api/catalog.ts";
+
+let response = await GET(Astro);
+const catalogData = await response.json();
 ---
 
 <MainLayout>
